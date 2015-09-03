@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Although it is possible to package this service as a traditional web application archive or WAR file for
  * deployment to an external application server, the simpler approach demonstrated below creates a standalone
  * application. You package everything in a single, executable JAR file, driven by a good old Java main() method.
- * And along the way, you use Spring’s support for embedding the Tomcat servlet container as the HTTP runtime,
+ * And along the way, you use Spring's support for embedding the Tomcat servlet container as the HTTP runtime,
  * instead of deploying to an external instance.
  *
  * The @SpringBootApplication is a convenience annotation that adds the following:
@@ -20,11 +20,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *  - @ComponentScan tells Spring to look for other components, configurations, and services in the hello package,
  *    allowing it to find the GreetingController.
  *
- *  The main() method uses Spring Boot’s SpringApplication.run() method to launch an application.
+ *  The main() method uses Spring Boot's SpringApplication.run() method to launch an application.
  *
  *  You can run the application using ./gradlew bootRun or do the following:
  *  1) ./gradlew build
  *  2) java -jar build/libs/gs-rest-hateoas-0.1.0.jar
+ *
+ *  Now that the service is up, visit http://localhost:8080/greeting
  *
  *  To create a WAR file instead, see http://spring.io/guides/gs/convert-jar-to-war/.
  */

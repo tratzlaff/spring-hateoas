@@ -5,6 +5,10 @@ import org.springframework.hateoas.ResourceSupport;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Spring will use the Jackson JSON library to automatically marshal instances of type Greeting into JSON.
+ * The @JsonCreator and @JsonProperty annotations guide Jackson.
+ */
 public class Greeting extends ResourceSupport {
 
     private final String content;

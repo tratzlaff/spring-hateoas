@@ -1,3 +1,11 @@
+/**
+ * Gradle build script for sample Spring HATEOAS app.
+ * See http://spring.io/guides/gs/rest-hateoas/#scratch.
+ *
+ * Spring Boot Gradle plugin
+ * http://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-gradle-plugin.html
+ */
+
 buildscript {
     repositories {
         mavenCentral()

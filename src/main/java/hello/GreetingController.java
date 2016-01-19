@@ -19,14 +19,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * We are not specifying GET vs. PUT, POST, and so forth, because @RequestMapping maps all HTTP operations by default.
  * Use @RequestMapping(method=GET) to narrow this mapping.
  *
- * @RequestParam binds the value of the query string parameter name into the name parameter of the greeting() method.
+ * The @RequestParam binds the value of the query string parameter name into the name parameter of the greeting() method.
  * This query string parameter is not required; if it is absent in the request, the defaultValue of "World" is used.
  *
  * The @ResponseBody annotation on the greeting method will cause Spring MVC to render the returned HttpEntity and
  * its payload, the Greeting, directly to the response.
  *
  * The most interesting part of the method implementation is how you create the link pointing to the controller method
- * and how you add it to the representation model. Both linkTo(�) and methodOn(�) are static methods on
+ * and how you add it to the representation model. Both linkTo() and methodOn() are static methods on
  * ControllerLinkBuilder that allow you to fake a method invocation on the controller.
  * The LinkBuilder returned will have inspected the controller method's mapping annotation to build up exactly
  * the URI the method is mapped to.

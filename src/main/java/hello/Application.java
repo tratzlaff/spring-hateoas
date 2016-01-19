@@ -26,6 +26,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *  1) ./gradlew build
  *  2) java -jar build/libs/gs-rest-hateoas-0.1.0.jar
  *
+ *  Now that the service is up, visit http://localhost:8080/greeting
+ *
  *  To create a WAR file instead, see http://spring.io/guides/gs/convert-jar-to-war/.
  */
 @SpringBootApplication

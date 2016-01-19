@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * In Spring’s approach to building RESTful web services, HTTP requests are handled by a controller.
+ * In Spring's approach to building RESTful web services, HTTP requests are handled by a controller.
  * The components are easily identified by the @Controller annotation, and this GreetingController
  * handles GET requests for /greeting by returning a new instance of the Greeting class.
  *
@@ -26,9 +26,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * its payload, the Greeting, directly to the response.
  *
  * The most interesting part of the method implementation is how you create the link pointing to the controller method
- * and how you add it to the representation model. Both linkTo(…) and methodOn(…) are static methods on
+ * and how you add it to the representation model. Both linkTo(ï¿½) and methodOn(ï¿½) are static methods on
  * ControllerLinkBuilder that allow you to fake a method invocation on the controller.
- * The LinkBuilder returned will have inspected the controller method’s mapping annotation to build up exactly
+ * The LinkBuilder returned will have inspected the controller method's mapping annotation to build up exactly
  * the URI the method is mapped to.
  *
  * The call to withSelfRel() creates a Link instance that you add to the Greeting representation model.

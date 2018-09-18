@@ -14,14 +14,14 @@
    https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-gradle-plugin.html
  */
 plugins {
-    id 'org.springframework.boot' version '1.5.3.RELEASE'
+    id 'org.springframework.boot' version '1.5.16.RELEASE'
 }
 
 apply plugin: 'java'
 
 jar {
     baseName = 'gs-rest-hateoas'
-    version =  '0.1.0'
+    version =  '0.1.1'
 }
 
 repositories {
@@ -38,5 +38,5 @@ dependencies {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.5'
+    gradleVersion = '4.10.1'
 }

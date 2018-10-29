@@ -10,3 +10,9 @@ http://localhost:8080/greeting
   }
 }
 ```
+
+## Hal Browser
+
+Adding the compile("org.springframework.data:spring-data-rest-hal-browser") dependency allows us to use the HAL Browser.
+
+http://localhost:8080/browser/index.html#http://localhost:8080/greeting?name=World

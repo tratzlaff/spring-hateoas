@@ -41,11 +41,11 @@ public class GreetingController {
     @RequestMapping("/greeting")
     @ResponseBody
     public HttpEntity<Greeting> greeting(
-            @RequestParam(value = "name", required = false, defaultValue = "World") String name) {
-
+            @RequestParam(value = "name", required = false, defaultValue = "World") String name
+    ) {
         Greeting greeting = new Greeting(String.format(TEMPLATE, name));
         greeting.add(linkTo(methodOn(GreetingController.class).greeting(name)).withSelfRel());
 
-        return new ResponseEntity<Greeting>(greeting, HttpStatus.OK);
+        return new ResponseEntity<>(greeting, HttpStatus.OK);
     }
 }
